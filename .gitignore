@@ -1,0 +1,18 @@
+#local files of terraform ignoring
+**/.terraform/*
+#.tfstate files
+*.tfstate
+*.tfstate.*
+
+#crash log files
+crash.log
+crash.*.log
+#exclude all .tfvars files,which are likely to contain sensitive data,such as 
+#passwd,private keys,and other secrets.These should not be part of version
+#control as they are data points which are potentially sensitive and subjective
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
